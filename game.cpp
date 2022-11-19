@@ -49,3 +49,27 @@ void drawBorder() {
 		gotoxy(SCREEN_WIDTH, i); cout << "±";
 	}
 }
+void genEnemy(int ind) {
+	enemyX[ind] = 17 + rand() % (33);
+}
+void drawEnemy(int ind) {
+	if (enemyFlag[ind] == true) {
+		gotoxy(enemyX[ind], enemyY[ind]);   cout << "****";
+		gotoxy(enemyX[ind], enemyY[ind] + 1); cout << " ** ";
+		gotoxy(enemyX[ind], enemyY[ind] + 2); cout << "****";
+		gotoxy(enemyX[ind], enemyY[ind] + 3); cout << " ** ";
+	}
+}
+void eraseEnemy(int ind) {
+	if (enemyFlag[ind] == true) {
+		gotoxy(enemyX[ind], enemyY[ind]); cout << "    ";
+		gotoxy(enemyX[ind], enemyY[ind] + 1); cout << "    ";
+		gotoxy(enemyX[ind], enemyY[ind] + 2); cout << "    ";
+		gotoxy(enemyX[ind], enemyY[ind] + 3); cout << "    ";
+	}
+}
+void resetEnemy(int ind) {
+	eraseEnemy(ind);
+	enemyY[ind] = 1;
+	genEnemy(ind);
+}
