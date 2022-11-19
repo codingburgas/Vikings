@@ -13,9 +13,9 @@ using namespace std;
 HANDLE console = GetStdHandle(STD_OUTPUT_HANDLE);
 COORD CursorPosition;
 
-int trafficY[3];
-int trafficX[3];
-int trafficFlag[3];
+int enemyY[3];
+int enemyX[3];
+int enemyFlag[3];
 char car[4][4] = { ' ','±','±',' ',
 					'±','±','±','±',
 					' ','±','±',' ',
