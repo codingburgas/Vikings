@@ -103,7 +103,7 @@ void gameover() {
 	cout << "\t\t-------- Game Over -------" << endl;
 	cout << "\t\t--------------------------" << endl << endl;
 	cout << "\t\tPress any key to go back to menu.";
-	getch();
+	_getch();
 }
 void updateScore() {
 	gotoxy(WIN_WIDTH + 7, 5); cout << "Score: " << score << endl;
@@ -119,7 +119,7 @@ void instructions() {
 	cout << "\n Press 'd' to move right";
 	cout << "\n Press 'escape' to exit";
 	cout << "\n\nPress any key to go back to menu";
-	getch();
+	_getch();
 }
 void play() {
 	carPos = -1 + WIN_WIDTH / 2;
@@ -143,12 +143,12 @@ void play() {
 	gotoxy(WIN_WIDTH + 2, 15); cout << " D Key - Right";
 
 	gotoxy(18, 5); cout << "Press any key to start";
-	getch();
+	_getch();
 	gotoxy(18, 5); cout << "                      ";
 
 	while (1) {
-		if (kbhit()) {
-			char ch = getch();
+		if (_kbhit()) {
+			char ch = _getch();
 			if (ch == 'a' || ch == 'A') {
 				if (carPos > 18)
 					carPos -= 4;
@@ -211,7 +211,7 @@ int main()
 		gotoxy(10, 10); cout << "2. Instructions";
 		gotoxy(10, 11); cout << "3. Quit";
 		gotoxy(10, 13); cout << "Select option: ";
-		char op = getche();
+		char op = _getche();
 
 		if (op == '1') play();
 		else if (op == '2') instructions();
