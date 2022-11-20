@@ -96,3 +96,28 @@ int collision() {
 	}
 	return 0;
 }
+void gameover() {
+	system("cls");
+	cout << endl;
+	cout << "\t\t--------------------------" << endl;
+	cout << "\t\t-------- Game Over -------" << endl;
+	cout << "\t\t--------------------------" << endl << endl;
+	cout << "\t\tPress any key to go back to menu.";
+	getch();
+}
+void updateScore() {
+	gotoxy(WIN_WIDTH + 7, 5); cout << "Score: " << score << endl;
+}
+
+void instructions() {
+
+	system("cls");
+	cout << "Instructions";
+	cout << "\n----------------";
+	cout << "\n Avoid Cars by moving left or right. ";
+	cout << "\n\n Press 'a' to move left";
+	cout << "\n Press 'd' to move right";
+	cout << "\n Press 'escape' to exit";
+	cout << "\n\nPress any key to go back to menu";
+	getch();
+}
