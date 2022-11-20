@@ -1,12 +1,11 @@
 <p align = "center">
- <img src = "Vis!00/images/logo_banner.jpg" alt = "logo">
 
   <h1>✍ Description </h1>
   Vikings is a newly formed team made up from 4 team members.
   <h1>🤝 Our Team </h1>
   <p>
   
-1. *Ivan Chelebiev** - **Scrum trainer**    
+1. **Ivan Chelebiev** - **Scrum trainer**    
   
 
 2. **Lubomir Georgiev** - **Backend Developer** 
