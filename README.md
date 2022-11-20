@@ -1,42 +1,51 @@
-<p align = "center">
+<h1 align="center">Vikings⚔️</h1>
+<h3 align="center">🚗Game for travelers🗺️</h3>
 
-  <h1>✍ Description </h1>
-  Vikings is a newly formed team made up from 4 team members.
-  <h1>🤝 Our Team </h1>
-  <p>
-  
-1. **Ivan Chelebiev** - **Scrum trainer**    
-  
 
-2. **Lubomir Georgiev** - **Backend Developer** 
-  
-
-3. **Erik Ivanov** - **Backend Developer** 
-  
-
-4. **Stanislav Iordanov** - **QA engineer** 
-  
-   
-    
-  </p>
-  
-  <h1>🚀 Used technologies</h1>
-  <p align="left"> 
-    <a> <img src="https://img.icons8.com/ios-filled/50/4a90e2/c-plus-plus-logo.png"/> </a> 
-    <a> <img src="https://img.icons8.com/fluency/48/000000/visual-studio.png"/> </a>
-    <a> <img src="https://img.icons8.com/color/48/000000/microsoft-teams.png"/> </a>
-    <a> <img src="https://img.icons8.com/color/48/000000/microsoft-word-2019--v2.png"/>  </a>
-    <a> <img src="https://img.icons8.com/color/48/000000/microsoft-powerpoint-2019--v1.png"/>  </a>
-    
-
-  </p>
-    
-   
-   <h1>📝 Documents</h1>
-  <p>
- <h2> <a href ="https://codingburgas-my.sharepoint.com/:w:/r/personal/idchelebiev20_codingburgas_bg/_layouts/15/Doc.aspx?sourcedoc=%7BEFA7166C-7116-48F0-903C-76E46544F494%7D&file=Documentation%20-%20VIKINGS%20(1)%202.docx&action=default&mobileredirect=true&login_hint=IDChelebiev20%40codingburgas.bg&ct=1668941200397&wdOrigin=OFFICECOM-WEB.MAIN.UPLOAD&cid=c5900aca-06e0-48c5-8b08-28e525692037" >📄 Documentation</h2>
- <h2> <a href ="https://codingburgas-my.sharepoint.com/:p:/r/personal/idchelebiev20_codingburgas_bg/_layouts/15/doc2.aspx?sourcedoc=%7BE15E7E00-4079-4449-B5D6-702A8E292750%7D&file=Presentation-VIKINGS%20(2).pptx&action=edit&mobileredirect=true&ct=1668941146903&wdOrigin=OFFICECOM-WEB.MAIN.UPLOAD&cid=5a572d01-d491-4f87-b7c8-572c1b60d260" >🖥 Presentation</h2>
+<p align="center">
+<img src="https://user-images.githubusercontent.com/85336785/202920058-746c28e8-f972-4222-bd09-9c60af549cb7.png" width="650">
 </p>
-    
-    
-## ***If you like our project you can 🌟 us!***
+  
+## Hello, We are Vikings🗡️
+
+Our game is a trip adventure with obstacles ..🎮🎮
+
+---
+ 
+ ## Team	<a name = "team"></a>
+1. **Ivan Chelebiev** - **Scrum trainer**	🧙🏼
+   > ***GitHub profile***: [***IDChelebiev20***](https://github.com/IDChelebiev20)	
+
+2. **Lubomir Georgiev** - **Backend Developer** 🐉
+   > ***GitHub profile***: [***LRGeorgiev20***](https://github.com/LRGeorgiev20)	
+
+3. **Erik Ivanov** - **Backend Developer** 🐼
+   > ***GitHub profile***: [***EIIvanov20***](https://github.com/EIIvanov20)	
+
+4. **Stanislav Yordanov** - **QA** 👨‍🌾
+   > ***GitHub profile***: [***SHYordanov20***](https://github.com/SHYordanov20)
+   
+ ---
+
+## Installation 
+
+You can download the game from [github](https://github.com/codingburgas/Vikings) by pressing the green clone button.
+
+
+
+
+
+---
+
+## Used technologies
+- <img src="https://1000logos.net/wp-content/uploads/2020/08/Visual-Studio-Logo.png" width="20"> Visual studio 
+- <img src="https://user-images.githubusercontent.com/85336785/202920679-6f4cd36c-93fe-45b4-a0d4-b90d12c3287a.png" width="20"> Word
+- <img src="https://user-images.githubusercontent.com/85336785/202920634-c4a203f5-35ef-4fc4-9cb8-a42b82fc8eca.png" width="20"> PowerPoint
+- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/2203px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png" width="20"> Excel
+- <img src="https://logos-world.net/wp-content/uploads/2021/04/Microsoft-Teams-Logo.png" width="20"> Teams
+- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/306px-ISO_C%2B%2B_Logo.svg.png" width="20"> C++
+
+
+---
+
+# If you like our game you can star us!⭐
