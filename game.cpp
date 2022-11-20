@@ -73,3 +73,26 @@ void resetEnemy(int ind) {
 	enemyY[ind] = 1;
 	genEnemy(ind);
 }
+void drawCar() {
+	for (int i = 0; i < 4; i++) {
+		for (int j = 0; j < 4; j++) {
+			gotoxy(j + carPos, i + 22); cout << car[i][j];
+		}
+	}
+}
+void eraseCar() {
+	for (int i = 0; i < 4; i++) {
+		for (int j = 0; j < 4; j++) {
+			gotoxy(j + carPos, i + 22); cout << " ";
+		}
+	}
+}
+
+int collision() {
+	if (enemyY[0] + 4 >= 23) {
+		if (enemyX[0] + 4 - carPos >= 0 && enemyX[0] + 4 - carPos < 9) {
+			return 1;
+		}
+	}
+	return 0;
+}
