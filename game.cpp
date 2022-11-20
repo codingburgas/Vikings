@@ -121,3 +121,103 @@ void instructions() {
 	cout << "\n\nPress any key to go back to menu";
 	getch();
 }
+void play() {
+	carPos = -1 + WIN_WIDTH / 2;
+	score = 0;
+	enemyFlag[0] = 1;
+	enemyFlag[1] = 0;
+	enemyY[0] = enemyY[1] = 1;
+
+	system("cls");
+	drawBorder();
+	updateScore();
+	genEnemy(0);
+	genEnemy(1);
+
+	gotoxy(WIN_WIDTH + 7, 2); cout << "Car Game";
+	gotoxy(WIN_WIDTH + 6, 4); cout << "----------";
+	gotoxy(WIN_WIDTH + 6, 6); cout << "----------";
+	gotoxy(WIN_WIDTH + 7, 12); cout << "Control ";
+	gotoxy(WIN_WIDTH + 7, 13); cout << "-------- ";
+	gotoxy(WIN_WIDTH + 2, 14); cout << " A Key - Left";
+	gotoxy(WIN_WIDTH + 2, 15); cout << " D Key - Right";
+
+	gotoxy(18, 5); cout << "Press any key to start";
+	getch();
+	gotoxy(18, 5); cout << "                      ";
+
+	while (1) {
+		if (kbhit()) {
+			char ch = getch();
+			if (ch == 'a' || ch == 'A') {
+				if (carPos > 18)
+					carPos -= 4;
+			}
+			if (ch == 'd' || ch == 'D') {
+				if (carPos < 50)
+					carPos += 4;
+			}
+			if (ch == 27) {
+				break;
+			}
+		}
+
+		drawCar();
+		drawEnemy(0);
+		drawEnemy(1);
+		if (collision() == 1) {
+			gameover();
+			return;
+		}
+		Sleep(50);
+		eraseCar();
+		eraseEnemy(0);
+		eraseEnemy(1);
+
+		if (enemyY[0] == 10)
+			if (enemyFlag[1] == 0)
+				enemyFlag[1] = 1;
+
+		if (enemyFlag[0] == 1)
+			enemyY[0] += 1;
+
+		if (enemyFlag[1] == 1)
+			enemyY[1] += 1;
+
+		if (enemyY[0] > SCREEN_HEIGHT - 4) {
+			resetEnemy(0);
+			score++;
+			updateScore();
+		}
+		if (enemyY[1] > SCREEN_HEIGHT - 4) {
+			resetEnemy(1);
+			score++;
+			updateScore();
+		}
+	}
+}
+
+int main()
+{
+	setcursor(0, 0);
+	srand((unsigned)time(NULL));
+
+	do {
+		system("cls");
+		gotoxy(10, 5); cout << " -------------------------- ";
+		gotoxy(10, 6); cout << " |        Travel game     | ";
+		gotoxy(10, 7); cout << " --------------------------";
+		gotoxy(10, 9); cout << "1. Start Game";
+		gotoxy(10, 10); cout << "2. Instructions";
+		gotoxy(10, 11); cout << "3. Quit";
+		gotoxy(10, 13); cout << "Select option: ";
+		char op = getche();
+
+		if (op == '1') play();
+		else if (op == '2') instructions();
+		else if (op == '3') exit(0);
+
+	} while (1);
+
+	return 0;
+}
