@@ -17,7 +17,7 @@ Our game is a trip adventure with obstacles ..🎮🎮
    > ***GitHub profile***: [***IDChelebiev20***](https://github.com/IDChelebiev20)	
 
 2. **Lubomir Georgiev** - **Backend Developer** 🐉
-   > ***GitHub profile***: [***LRGeorgiev20***](https://github.com/LRGeorgiev20)	
+   > ***GitHub profile***: [***LRGeorgiev***](https://github.com/LRGeorgiev)	
 
 3. **Erik Ivanov** - **Backend Developer** 🐼
    > ***GitHub profile***: [***EIIvanov20***](https://github.com/EIIvanov20)	
